@@ -13,7 +13,9 @@ import androidx.navigation.navArgument
 import com.example.cryptolistcompose.ui.theme.CryptoListComposeTheme
 import com.example.cryptolistcompose.view.CyrptoDetailScreen
 import com.example.cryptolistcompose.view.CyrptoListScreen
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

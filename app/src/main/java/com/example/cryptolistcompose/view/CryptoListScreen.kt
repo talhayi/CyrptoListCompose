@@ -7,6 +7,6 @@ import androidx.navigation.NavController
 @Composable
 fun CyrptoListScreen(navController: NavController){
     
-    Text(text = "Hello world")
+    Text(text = "Hello Compose")
     
 }

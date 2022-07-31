@@ -23,7 +23,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.example.cryptolistcompose.model.CryptoList
 import com.example.cryptolistcompose.model.CryptoListItem
 import com.example.cryptolistcompose.viewmodel.CryptoListViewModel
 

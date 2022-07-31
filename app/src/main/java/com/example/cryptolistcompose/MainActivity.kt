@@ -11,8 +11,9 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 
 import com.example.cryptolistcompose.ui.theme.CryptoListComposeTheme
-import com.example.cryptolistcompose.view.CyrptoDetailScreen
+import com.example.cryptolistcompose.view.CryptoDetailScreen
 import com.example.cryptolistcompose.view.CyrptoListScreen
+
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -35,7 +36,7 @@ class MainActivity : ComponentActivity() {
                         },
                         navArgument("cyrptoPrice") {
                             type = NavType.StringType
-                        }
+                        },
                     )) {
                         val cryptoId = remember {
                             it.arguments?.getString("cyrptoId")
@@ -43,11 +44,12 @@ class MainActivity : ComponentActivity() {
                         val cryptoPrice = remember {
                             it.arguments?.getString("cyrptoPrice")
                         }
-                        CyrptoDetailScreen(
-                            id = cryptoId ?: "",
-                            price = cryptoPrice ?: "",
-                            navController = navController
-                        )
+
+                        CryptoDetailScreen(
+                            id = cryptoId ?:"",
+                            price = cryptoPrice ?:"" ,
+                            navController = navController)
+
                     }
                 }
             }

@@ -1,4 +1,4 @@
-- #### This project is written with Kotlin. MVVM architecture is used. Compose is used
+- #### MVVM architecture and Compose are used
 - #### I developed this crypto list application using the API offered at Nomics. When we open the application, crypto currencies are listed first on the HomePage. You can search for a crypto currency name.When click on the crypto currency it goes to the detail page. The detail page shows the name, logo and price of the crypto currency.
 
 ## Important Libraries in Project
